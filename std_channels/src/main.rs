@@ -41,6 +41,7 @@ pub fn client_process(client_master_tx: mpsc::Sender<Instant>) {
             let x: f64 = 5324.3431 + n as f64;
             let _ = x.tan().atan().tan().atan().tan().atan().tan().atan().tan().atan().tan().atan().tan().atan().tan().atan().tan().atan().tan().atan().tan().atan().tan().atan().tan().atan().tan().atan();
         }
+        // std::thread::sleep(std::time::Duration::from_millis(50));
         let _ = client_master_tx.send(Instant::now());
         count += 1;
     }
